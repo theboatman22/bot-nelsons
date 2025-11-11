@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot de Dicas - Clash Royale</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="genio_da_lampada_mag    ica.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Bot de Dicas - Clash Royale</h1>
+            <p class="subtitle">Especialmente para <span class="highlight">gustavoweb</span> melhorar suas habilidades!</p>
+            <p class="authors">Criado por: Rafael Sacchetto e Hugo Baptistella Silva</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <strong>Bot:</strong> Olá gustavoweb! Estou aqui para te ajudar a melhorar no Clash Royale. 
+                        Posso te dar dicas sobre estratégias, decks, gerenciamento de elixir e muito mais. 
+                        O que você gostaria de saber hoje?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Digite sua pergunta sobre Clash Royale..." autocomplete="off">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+
+        <div class="suggestions">
+            <p>Precisa de ideias? Tente perguntar sobre:</p>
+            <div class="suggestion-buttons">
+                <button class="suggestion-btn" data-question="Como montar um deck eficiente?">💡 Deck Building</button>
+                <button class="suggestion-btn" data-question="Como gerenciar melhor o elixir?">⚗️ Gerenciar Elixir</button>
+                <button class="suggestion-btn" data-question="Quais são as melhores estratégias defensivas?">🛡️ Estratégias Defensivas</button>
+                <button class="suggestion-btn" data-question="Como contra-atacar eficientemente?">⚔️ Contra-ataques</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
